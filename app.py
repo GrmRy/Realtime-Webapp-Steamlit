@@ -15,8 +15,6 @@ def transform(frame: av.VideoFrame):
     elif filter == "canny":
         img = cv2.cvtColor(cv2.Canny(img, 100, 200), cv2.COLOR_GRAY2BGR)
     elif filter == "grayscale":
-        # We convert the image twice because the first conversion returns a 2D array.
-        # the second conversion turns it back to a 3D array.
         img = cv2.cvtColor(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), cv2.COLOR_GRAY2BGR)
     elif filter == "sepia":
         kernel = np.array(
