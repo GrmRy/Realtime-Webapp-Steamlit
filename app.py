@@ -6,7 +6,7 @@ import av
 
 st.title("Open CV Filters on Streamlit Webcam")
 filter = "none"
-
+#to install libgl in codespaces : sudo apt update -> sudo install libgl1-mesa-glx 
 def transform(frame: av.VideoFrame):
     img = frame.to_ndarray(format="bgr24")
 
