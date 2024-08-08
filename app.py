@@ -50,5 +50,5 @@ with col6:
         filter = "invert"
 
 
-webrtc_streamer(key="streamer",sendback_audio=False)
+webrtc_streamer(key="streamer",video_frame_callback=transform ,sendback_audio=False)
 
