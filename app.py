@@ -56,7 +56,7 @@ with col6:
 
 
 webrtc_streamer(
-    key="streamer",
+    key="sample",
     video_frame_callback=transform,
     sendback_audio=False
     )
